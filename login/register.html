@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamenMatt Login</title>
+    <link rel="stylesheet" href="./css/styl-log.css">
+    <link rel="icon" href="./img/ramen.png" type="image/icon" >
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><a href="#"><img src="./img/ramen.png" alt="ramenmatt"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="../restauracja.html" class="open-sans-tekstfml">Home</a></li>
+                    <li><a href="../zamowienia/zamoweinua.html" class="open-sans-tekstfml">zamów</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+            </div>
+            <div class="menu-aftr">
+                <span><i class="fa-solid fa-bars fa-2xl" style="color: #fff;"></i></span>
+            </div>
+        </header>
+        <main>
+            <section id="register">
+                <form action="" method="post">
+                    <form action="./registerr.php" method="post">
+                        <h2>Register</h2>
+                        <br>
+                        <input type="text" name="nme" id="nme" placeholder="Imie" min="3" required> 
+                        <br>
+                        <input type="text" name="nazw" id="nazw" placeholder="Nazwisko" min="3" required>
+                        <br>
+                        <input type="text" name="adrs" id="adrs" placeholder="Adres" min="1" maxlength="999" required>
+                        <br>
+                        <input type="number" pattern="[0-9]{5}" name="kod" id="kod" placeholder="Kod pocztowy" min="1" required>
+                        <br>
+                        <input type="email" name="mail" id="mail" required placeholder="Email" min="6">
+                        <br>
+                        <input type="tel" name="telefon" id="telefon" required placeholder="Telefon" min="9">
+                        <br>
+                        <input type="password" name="haslo" id="haslo" required placeholder="Password" min="6">
+                        <br>
+                        <input type="submit" value="Zatwierdź" name="submit">
+                        <input type="reset" name="reset" id="" value="Wyczyść" placeholder="Wyczyść">
+                        <br>
+                        <h2><a href="./logowanie.html">Logowanie</a></h2>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-cont">
+                <div class="pctech-abt">
+                    <img src="./img/logofoter.png" alt="ramen">
+                    <p class="open-sans-tekstfml">
+                        RamenMatt to miejsce, gdzie japońska tradycja spotyka się z najwyższą jakością. 
+                        Oferujemy wyjątkowy ramen, świeże sushi, wszystko przygotowywane z pasją i dbałością o każdy detal. 
+                        Zapraszamy!
+                    </p>
+                </div>
+                <div class="linkshr">
+                    <h2>Quick links <hr></h2>
+                    <ul>
+                        <li><a href="../restauracja.html">Home</a></li>
+                        <li><a href="../zamowienia/zamoweinua.html">zamów</a></li>
+                    </ul>
+                </div>
+                <div class="linkshr">
+                    <h2>Support <hr></h2>
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">FaQ</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Help</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2>Contact <hr></h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <p><a href="tel:123123443">+48 876 456 321</a></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto: RamenM@gmail.com">RamenM@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>&#169; Matthew Irzyk 2024. Educational use permitted.</p>
+        </div>
+        <div class="good-bye">
+            <span class="line-gd"></span>
+            <h2 class="yuji-mai-regular showup">マシュー・イルジク</h2>
+        </div>
+    </div>
+    <script>
+        menuShw = document.querySelector(".menu-aftr");
+            menuShw.onclick = function() {
+                navbr = document.querySelector("nav");
+                navbr.classList.toggle("active");
+            };
+    </script>
+</body>
+</html>
